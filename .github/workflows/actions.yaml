@@ -1,2 +1,11 @@
-- name: Terraform Docs Build
-  uses: lukegriffith/tf-config-docs@v0.0.2-alpha
+
+name: 'Test Actions'
+
+
+jobs:
+  main:
+    name: build docs
+    steps:
+
+    - name: Terraform Docs Build
+      uses: lukegriffith/tf-config-docs@v0.0.2-alpha
