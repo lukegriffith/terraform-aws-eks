@@ -5,6 +5,8 @@ on: [push]
 jobs:
   main:
     name: build docs
+    runs-on: ubuntu-latest
+        if: github.repository_owner == 'lukegriffith'
     steps:
 
     - name: Terraform Docs Build
