@@ -24,6 +24,8 @@ resource "aws_eks_cluster" "this" {
     public_access_cidrs     = var.cluster_endpoint_public_access_cidrs
   }
 
+
+
   kubernetes_network_config {
     ip_family         = var.cluster_ip_family
     service_ipv4_cidr = var.cluster_service_ipv4_cidr
