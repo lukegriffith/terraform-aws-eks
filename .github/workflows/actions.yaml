@@ -10,6 +10,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Terraform Docs Build
-      uses: lukegriffith/tf-config-docs@alpha-v0.0.2
+      uses: lukegriffith/tf-config-docs@alpha-v0.0.3
       with:
         data-output-path: ./docs1
