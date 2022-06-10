@@ -12,4 +12,4 @@ jobs:
     - name: Terraform Docs Build
       uses: lukegriffith/tf-config-docs@alpha-v0.0.4
       with:
-        data-output-path: ./docs1
+        data-output-path: ./docs
