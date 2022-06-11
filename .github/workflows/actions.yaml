@@ -1,6 +1,9 @@
 
-name: 'Test Actions'
-on: [push]
+name: 'Terraform Documentation'
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   main:
@@ -10,6 +13,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Terraform Docs Build
-      uses: lukegriffith/tf-config-docs@alpha-v0.0.7
+      uses: lukegriffith/tf-config-docs@alpha-v0.0.8
       with:
         data-output-path: ./docs
