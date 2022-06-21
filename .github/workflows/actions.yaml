@@ -18,4 +18,4 @@ jobs:
         data-output-path: ./docs
         tf-module-load-env-name: true
       env:
-        WORKDIR_FRIENDLY_NAME: ${{ GITHUB_REPOSITORY }}
+        WORKDIR_FRIENDLY_NAME: ${{ env.GITHUB_REPOSITORY }}
