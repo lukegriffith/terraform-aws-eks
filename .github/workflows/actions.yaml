@@ -9,13 +9,13 @@ jobs:
   main:
     name: build docs
     runs-on: ubuntu-latest
-    if: github.repository_owner == 'lukegriffith'
     steps:
     - uses: actions/checkout@v2
     - name: Terraform Docs Build
       uses: lukegriffith/tf-config-docs@v0.1.12
       with:
         data-output-path: ./docs
+        tf-module-recruse: true
         tf-module-load-env-name: true
       env:
         WORKDIR_FRIENDLY_NAME: ${{ github.repository }}
